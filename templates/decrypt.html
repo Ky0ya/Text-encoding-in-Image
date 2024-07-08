@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decrypt</title>
+</head>
+<body>
+    <h1>Decrypt</h1>
+    <form action="/decrypt" method="post" enctype="multipart/form-data">
+        <div>
+            <label for="image">Select image:</label>
+            <input type="file" id="image" name="image" required>
+        </div>
+        <button type="submit">Decrypt</button>
+    </form>
+    {% if text %}
+        <h2>Decrypted Text:</h2>
+        <p>{{ text }}</p>
+    {% endif %}
+</body>
+</html>

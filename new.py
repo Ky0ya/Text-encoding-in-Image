@@ -67,6 +67,3 @@ def decode(image):
             break
 
     return text
-        else:
-            if p[-1]%2!=0:
-                p[-1]+=1
